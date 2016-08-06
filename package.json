@@ -1,0 +1,40 @@
+{
+  "name": "vaxplan.testcases",
+  "version": "0.0.1",
+  "description": "Test cases for vaccine evaluation and forecast engines",
+  "repository": {
+    "private": "false",
+    "type": "git",
+    "url": "git://github.com/WorldVax/vaxplan.testcases"
+  },
+  "keywords": [
+    "immunization",
+    "decision support",
+    "rule engine",
+    "decision engine"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "prepublish": "typings install && npm run build",
+    "test": "cucumber-js",
+    "test-dtap": "cucumber-js --tags @VaccineGroup_DTaP",
+    "tsc" : "tsc",
+    "typings": "typings"
+  },
+  "author": "WorldVax.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WorldVax/vaxplan.testcases/issues"
+  },
+  "dependencies": {
+    "require": "^2.4.20",
+    "requirejs": "^2.2.0",
+    "vaxplan.core": "WorldVax/vaxplan.core"
+  },
+  "devDependencies": {
+    "cucumber": "^1.2.2",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "2.4.1",
+    "jasmine-node": "1.14.5"
+  }
+}
