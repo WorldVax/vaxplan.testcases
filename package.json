@@ -18,7 +18,8 @@
     "prepublish": "typings install && npm run build",
     "test": "cucumber-js",
     "test-dtap": "cucumber-js --tags @VaccineGroup_DTaP",
-    "tsc" : "tsc",
+    "test-simple": "cucumber-js --tags @simple",
+    "tsc": "tsc",
     "typings": "typings"
   },
   "author": "WorldVax.org",
@@ -29,7 +30,8 @@
   "dependencies": {
     "require": "^2.4.20",
     "requirejs": "^2.2.0",
-    "vaxplan.core": "WorldVax/vaxplan.core"
+    "vaxplan.core": "WorldVax/vaxplan.core",
+    "vaxplan.refdata": "github:worldvax/vaxplan.refdata"
   },
   "devDependencies": {
     "cucumber": "^1.2.2",
